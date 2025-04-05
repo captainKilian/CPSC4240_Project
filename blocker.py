@@ -13,7 +13,7 @@ for IP in sys.argv[1:]:
             if int(number) > 255 or int(number) < 0 and number.isdigit():
                 print("Invalid IP:",IP)
                 quit()
-        if len(ip) == 2 and (int(ip[1]) > 32 or int(ip[1]) < 0) and number.isdigit():
+        if len(ip) == 2 and (int(ip[1]) > 32 or int(ip[1]) < 0) and ip[1].isdigit():
             print("Invalid IP:",IP)
             quit()
         print('Writing IP:', IP)
