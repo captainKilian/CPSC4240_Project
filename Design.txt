@@ -8,7 +8,7 @@ network_monitor.py
   - Loads the blacklist from suspicious_IP.txt, monitors network connections, checks for blacklisted IPs, logs violations, and displays status in the console.
 
 downloader.py
-  - Fetches blacklisted IPs from https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt and saves them to suspicious_IP.txt.
+  - Fetches blacklisted IPs from https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt and saves them to suspicious_IP_Prepared.txt.
 
 blocker.py
   - Checks a blocked IP's format and then adds it to the blocked_IPs.txt file
@@ -16,7 +16,7 @@ suspicious_IP.txt
   - A text file containing blacklisted IPs fetched by downloader.py.
   - Each line contains one IP address to monitor against.
 
-suspicious_IP_Preapred.txt
+suspicious_IP_Prepared.txt
   - A text file containing blacklisted IPs fetched by downloader.py.
   - Each line contains one IP address to monitor against.
   - Has comments and blank space removed
