@@ -1,4 +1,4 @@
-from scapy.all import *
+from scapy.all import sniff, IP
 import subprocess
 from datetime import datetime
 
