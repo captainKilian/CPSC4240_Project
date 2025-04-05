@@ -10,6 +10,8 @@ network_monitor.py
 downloader.py
   - Fetches blacklisted IPs from https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt and saves them to suspicious_IP.txt.
 
+blocker.py
+  - Checks a blocked IP's format and then adds it to the blocked_IPs.txt file
 suspicious_IP.txt
   - A text file containing blacklisted IPs fetched by downloader.py.
   - Each line contains one IP address to monitor against.

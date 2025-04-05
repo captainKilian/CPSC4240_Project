@@ -1,0 +1,4 @@
+# Welcome to the blocked IP file!
+# The IP format should be xxx:xxx:xx:xx/xxx\n
+# 128.196.0.1/10
+# 128.196.0.2/10
