@@ -1,15 +1,18 @@
-Design Document: Network Monitoring and Filter Tool
+Design Document: Simplified Network Monitoring and Filter Tool
 
 Files and Their Purposes
 -----------------------
 
 network_monitor.py
   - The main Python script that runs the program.
-  - Loads the blacklist, monitors network connections, checks for blacklisted IPs, logs violations, and displays status in the console.
+  - Loads the blacklist from suspicious_IP.txt, monitors network connections, checks for blacklisted IPs, logs violations, and displays status in the console.
 
-blacklist.txt
-  - A text file listing IPs to monitor against.
-  - Each line contains one IP address (e.g., 8.8.8.8).
+downloader.py
+  - Fetches blacklisted IPs from https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt and saves them to suspicious_IP.txt.
+
+suspicious_IP.txt
+  - A text file containing blacklisted IPs fetched by downloader.py.
+  - Each line contains one IP address to monitor against.
 
 violations.log
   - A log file generated at runtime.
