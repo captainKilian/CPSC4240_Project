@@ -14,6 +14,11 @@ suspicious_IP.txt
   - A text file containing blacklisted IPs fetched by downloader.py.
   - Each line contains one IP address to monitor against.
 
+suspicious_IP_Preapred.txt
+  - A text file containing blacklisted IPs fetched by downloader.py.
+  - Each line contains one IP address to monitor against.
+  - Has comments and blank space removed
+
 violations.log
   - A log file generated at runtime.
   - Stores records of blacklisted IP connections with timestamps.
