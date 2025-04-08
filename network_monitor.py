@@ -2,8 +2,9 @@ from scapy.all import sniff, IP
 import subprocess
 from datetime import datetime
 
+susIPs = set()
 
-def load_suspicious_IPs(filename = "suspicous_IP_Prepared.txt"):
+def load_suspicious_IPs(filename = "suspicious_IP_Prepared.txt"):
     with open(filename, "r") as sIP:
         return set(line.strip() for line in sIP if line.strip())
 
@@ -27,4 +28,4 @@ def log(ip):
 
 if __name__ == "__main__":
     susIPs = load_suspicious_IPs()
-    sniff(filter="ip", prn=packet_callback, iface="eth0", store=0)
+    sniff(filter="ip", prn=packet_callback, iface="enp0s3", store=0)
